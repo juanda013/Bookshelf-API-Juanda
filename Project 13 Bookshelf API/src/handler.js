@@ -8,7 +8,7 @@ const addBookList = (request, h) => {
     const updatedAt = insertedAt;
     const finished = pageCount === readPage;
     const addList = {
-        name,year,author,summary,publisher,reading,id,updatedAt,finished
+        name,year,author,summary,publisher,reading,id,updatedAt,readPage,pageCount,finished
     };
 
     books.push(addList);
@@ -43,4 +43,4 @@ const addBookList = (request, h) => {
     }
 };
 
-module.exports =  addBookList;
+module.exports =  {addBookList};
